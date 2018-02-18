@@ -1,3 +1,57 @@
-div, button {
-  margin: 15px;
+/********** Global ********** */
+
+
+/*Color Scheme
+Clean(bg): #DFDCE3;
+Sunshine(blue, darker, maybe Side nav): #465C8B;
+Vermillion(green, lighter): #93C178;
+Fresh(lemon, lightest, accents, shadows): #F7EF6A;
+*/
+
+img {
+  max-width:100px;
+}
+
+body {
+  background: #DFDCE3;
+}
+
+/***** Landing *****/
+
+
+/***** Widgets *****/
+
+
+/* Playback Footer */
+.div--container__playbackfooter {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 100px;
+  text-align: center;
+  background: #93C178;
+  }
+
+.div--container__playbackactions {
+  background: rgba(255,255,255,.4);
+  height: 60px;
+  width: 100%;
+  padding: 5px
+}
+
+.div--container__seekbar {
+  height: 10px;
+  background: rgba(0,0,0,.2);
+  padding: 5px;
+  width: 100%;
+}
+
+.div--container__nowplayingpicture {
+  position: absolute;
+  bottom: 105px;
+  right: 10px;
+}
+
+#img-nowPlaying {
+  border-radius: 5px;
 }
