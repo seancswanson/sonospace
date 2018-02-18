@@ -3,6 +3,8 @@ import './App.css';
 import Spotify from 'spotify-web-api-js';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import PlaybackFooter from './widgets/playbackFooter.js';
+import dotenv from 'dotenv'
+dotenv.config()
 
 const spotifyWebApi = new Spotify();
 
