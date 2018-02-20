@@ -6,14 +6,15 @@
  * For more information, read
  * https://developer.spotify.com/web-api/authorization-guide/#authorization_code_flow
  */
-
+// const dotenv = require('dotenv');
+// dotenv.config({path: '~/projects/ga/wdi/unit4/sonospace-project4'});
 var express = require('express'); // Express web server framework
 var request = require('request'); // "Request" library
 var querystring = require('querystring');
 var cookieParser = require('cookie-parser');
 
-var client_id = process.env.Client_ID; // Your client id
-var client_secret = process.env.Client_Secret; // Your secret
+const client_id = ''; // Your client id
+const client_secret = ''; // Your secret
 var redirect_uri = 'http://localhost:8888/callback'; // Your redirect uri
 
 /**
@@ -39,7 +40,7 @@ app.use(express.static(__dirname + '/public'))
    .use(cookieParser());
 
 app.get('/login', function(req, res) {
-
+  console.log(client_id, 'hi');
   var state = generateRandomString(16);
   res.cookie(stateKey, state);
 
