@@ -6,7 +6,10 @@ Clean(bg): #DFDCE3;
 Sunshine(blue, darker, maybe Side nav): #465C8B;
 Vermillion(green, lighter): #93C178;
 Fresh(lemon, lightest, accents, shadows): #F7EF6A;
+#966b9d #c98686 #f2b880 #fff4ec #e7cfbc
 */
+
+button:focus {outline:0;}
 
 
 body {
@@ -51,7 +54,7 @@ body {
 /***** Landing *****/
 
 .div--underlayer__landing {
-  background: #F2B880;
+  background: #F48931;
   height: 100vh;
 }
 
@@ -94,7 +97,7 @@ body {
   color: black;
   display: block;
   border-radius: 3px;
-  z-index: 1;
+  z-index: 3;
   position: relative;
   top: 223px;
   left: 318px;
@@ -102,17 +105,17 @@ body {
 }
 
 .button--landing__login {
-  border: 5px solid #6AE368;
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 1px;
-  background: white;
+  background: #6AE368;
   padding: 10px 15px;
   border-radius: 3px;
   margin: 15px 5px 5px 5px;
   position: relative;
   right: 5px;
   cursor: pointer;
+  box-shadow: 0 0 3px 1px rgba(0,0,0,.1);
 }
 
 #img--landing__spotify {
@@ -133,22 +136,62 @@ body {
 }
 /***** Widgets *****/
 
+/* Sidebar */
+.div--container__sidebar {
+  height: 100%;
+  width: 80px;
+  background: #93C178;
+  position: absolute;
+  left: 0;
+  box-shadow: 0 0 2px 1px rgba(0,0,0,.2);
+  text-align: center;
+}
+
+.div--container__new {
+  width: 600px;
+  position: relative;
+  left: 500px;
+}
+
+.a--sidebar {
+  color: white;
+  background: none;
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 3px;
+  border: 1px solid rgba(255,255,255,.3);
+  transition: box-shadow 1s;
+}
+
+.a--sidebar:hover {
+  box-shadow: 0 0 2px 1px rgba(0,0,0,.2); 
+}
 
 /* Playback Footer */
+
+.button-playback {
+  background: none;
+  border: none;
+  font-size: 23px;
+  letter-spacing: 2px
+}
+
 .div--container__playbackfooter {
   position: absolute;
   bottom: 0;
   width: 100vw;
-  height: 110px;
+  height: 130px;
   text-align: center;
   background: #93C178;
+  box-shadow: 0 0 5px rgba(0,0,0,.2);
+
   }
 
 .div--container__playbackactions {
-  height: 40px;
   width: 100%;
-  position: relative;
-  top:20px;
+  margin-top: 20px;
 }
 
 .div--container__seekbar {
@@ -253,6 +296,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   opacity: 1;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
+
 
 /* Media Queries */
 
