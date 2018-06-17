@@ -48,8 +48,8 @@ A beautiful, minimal, and funky redesign of the Spotify Web Player. Use **Sonosp
 
 ### User Stories
 
-> As a user, I want to be able to log in through Spotify or be linked to Spotify for account creation.
-> As a user, I want to be able to view the song currently playing, browse new music from top artists, and review playlists.
+* As a user, I want to be able to log in through Spotify or be linked to Spotify for account creation.
+* As a user, I want to be able to view the song currently playing, browse new music from top artists, and review playlists.
 
 ### Versioning
 
@@ -60,11 +60,11 @@ A beautiful, minimal, and funky redesign of the Spotify Web Player. Use **Sonosp
 
 As this is a project currently in development, there some things left to implement.
 
-> Render top artists/new released album art in media player.
-> Change interval for the getCurrentSong functionality to avoid polling Spotify too often.
-> Fetch user's public AND private playlists.
-> Incorporate 30 second preview files for any song clicked on from the client.
-> DJ function, create playlists based on interests.
+  * Render top artists/new released album art in media player.
+  * Change interval for the getCurrentSong functionality to avoid polling Spotify too often.
+  * Fetch user's public AND private playlists.
+  * Incorporate 30 second preview files for any song clicked on from the client.
+  * DJ function, create playlists based on interests.
 
 
 ## Authors

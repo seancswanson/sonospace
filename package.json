@@ -11,5 +11,11 @@
     "path": "^0.12.7",
     "querystring": "^0.2.0",
     "request": "^2.83.0"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0"
   }
 }
